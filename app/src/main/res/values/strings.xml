@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RunningTrackerApp</string>
+    <string name="google_api_key">AIzaSyBtsoN1jXZeM_ztrsVmqOuoCHpVyRWwSBg</string>
 </resources>
