@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RunningTrackerApp</string>
+    <string name="app_name">Running Tracker App</string>
     <string name="google_api_key">AIzaSyBtsoN1jXZeM_ztrsVmqOuoCHpVyRWwSBg</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -9,7 +9,7 @@
     <string name="setup">Setup</string>
     <string name="settings">Settings</string>
     <string name="welcome">Welcome!</string>
-    <string name="string_setup_welcome_msg">Please entr your name and weight</string>
+    <string name="string_setup_welcome_msg">Please enter your name and weight</string>
     <string name="user_name">User name</string>
     <string name="user_weight">User weight</string>
     <string name="name">Name</string>
