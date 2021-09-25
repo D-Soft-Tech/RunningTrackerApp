@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_20dp"
+    tools:context=".ui.fragments.SetupFragment">
+
+
+    <TextView
+        android:id="@+id/welcome_tv"
+        style="@style/page_heading_text"
+        android:layout_marginVertical="@dimen/dimen_30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_sub_text_tv"
+        style="@style/page_sub_heading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_setup_welcome_msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/welcome_tv"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_tv" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconContentDescription="@string/user_name"
+        app:boxStrokeWidth="@dimen/dimen_2dp"
+        app:boxCornerRadiusBottomEnd="@dimen/dimen_20dp"
+        app:boxCornerRadiusBottomStart="@dimen/dimen_20dp"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_20dp"
+        app:boxCornerRadiusTopStart="@dimen/dimen_20dp"
+        app:boxStrokeColor="@color/main_color"
+        app:startIconDrawable="@drawable/ic_person"
+        app:startIconTint="@color/main_color"
+        android:textColorHint="@color/main_color"
+        style="@style/text_input_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/welcome_sub_text_tv"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_color"
+            android:inputType="text"
+            android:hint="@string/name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        app:boxStrokeWidth="@dimen/dimen_2dp"
+        app:boxCornerRadiusBottomEnd="@dimen/dimen_20dp"
+        app:boxCornerRadiusBottomStart="@dimen/dimen_20dp"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_20dp"
+        app:boxCornerRadiusTopStart="@dimen/dimen_20dp"
+        app:boxStrokeColor="@color/main_color"
+        app:startIconDrawable="@drawable/ic_monitor_weight"
+        app:startIconTint="@color/main_color"
+        android:textColorHint="@color/main_color"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:startIconContentDescription="@string/user_weight"
+        app:suffixText="@string/kg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight"
+            android:inputType="number"
+            android:textColor="@color/main_color" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <TextView
+        android:id="@+id/continue_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/main_color"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toTopOf="@+id/gl_3"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_forward_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

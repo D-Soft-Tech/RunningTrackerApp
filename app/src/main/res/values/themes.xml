@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.RunningTrackerApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.RunningTrackerApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,5 +12,36 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="page_heading_text" parent="Theme.RunningTrackerApp">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">@dimen/dimen_20sp</item>
+    </style>
+
+    <style name="page_sub_heading_text" parent="Theme.RunningTrackerApp">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/secondary_color</item>
+    </style>
+
+    <style name="text_input_layout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/main_color</item>
+    </style>
+
+    <style name="text_input_edit_text_settings_page" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="statistics_texts" parent="Theme.RunningTrackerApp">
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="statistics_texts_label" parent="Theme.RunningTrackerApp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
     </style>
 </resources>

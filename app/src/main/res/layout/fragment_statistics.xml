@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_color"
+    android:padding="@dimen/dimen_20dp"
+    tools:context=".ui.fragments.StatisticsFragment">
+
+    <TextView
+        android:id="@+id/total_time_tv"
+        style="@style/statistics_texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero_time"
+        app:layout_constraintEnd_toEndOf="@+id/total_time_label"
+        app:layout_constraintStart_toStartOf="@+id/total_time_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/total_time_label"
+        style="@style/statistics_texts_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_time"
+        app:layout_constraintEnd_toEndOf="@+id/total_cal_burnt"
+        app:layout_constraintStart_toStartOf="@+id/total_cal_burnt"
+        app:layout_constraintTop_toBottomOf="@+id/total_time_tv" />
+
+    <TextView
+        android:id="@+id/total_distance"
+        style="@style/statistics_texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_distance"
+        app:layout_constraintEnd_toEndOf="@+id/total_distance_label"
+        app:layout_constraintStart_toStartOf="@+id/total_distance_label"
+        app:layout_constraintTop_toTopOf="@+id/total_time_tv" />
+
+    <TextView
+        android:id="@+id/total_distance_label"
+        style="@style/statistics_texts_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_distance_lable"
+        app:layout_constraintEnd_toEndOf="@+id/avg_speed_label"
+        app:layout_constraintStart_toStartOf="@+id/avg_speed_label"
+        app:layout_constraintTop_toBottomOf="@+id/total_distance" />
+
+    <TextView
+        android:id="@+id/total_cal_burnt"
+        style="@style/statistics_texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/total_cal"
+        app:layout_constraintEnd_toEndOf="@+id/total_cal_burnt_label"
+        app:layout_constraintStart_toStartOf="@+id/total_cal_burnt_label"
+        app:layout_constraintTop_toBottomOf="@+id/total_time_label" />
+
+    <TextView
+        android:id="@+id/total_cal_burnt_label"
+        style="@style/statistics_texts_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_calories_burnt"
+        app:layout_constraintEnd_toStartOf="@+id/avg_speed_label"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_cal_burnt" />
+
+    <TextView
+        android:id="@+id/avg_speed"
+        style="@style/statistics_texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/avg_spd"
+        app:layout_constraintEnd_toEndOf="@+id/avg_speed_label"
+        app:layout_constraintStart_toStartOf="@+id/avg_speed_label"
+        app:layout_constraintTop_toTopOf="@+id/total_cal_burnt" />
+
+    <TextView
+        android:id="@+id/avg_speed_label"
+        style="@style/statistics_texts_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/average_speed"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/total_cal_burnt_label"
+        app:layout_constraintTop_toBottomOf="@+id/avg_speed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
